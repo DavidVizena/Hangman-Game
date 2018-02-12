@@ -11,7 +11,7 @@ header{
     text-align: center;
     margin: 15px auto;
     z-index: 1;
-    background-image: url(https://blogs-images.forbes.com/olliebarder/files/2017/03/gundam_wing_mecha.jpg);
+    background-image: url(../images/gundamHeader.jpg);
 }
 .underscore{
     height: 150px;
@@ -20,8 +20,11 @@ header{
     font-size: 100px;
     text-align: center;
     margin: 50px auto;
+    padding-top: 50px;
     z-index: 1;
-
+    font-family: 'Orbitron', sans-serif;
+    background-color: #808080;
+    opacity: .75;
 }
 .correctGuess{
     height: 150px;
@@ -31,7 +34,9 @@ header{
     text-align: center;
     margin: 50px auto;
     z-index: 1;
-
+    font-family: 'Orbitron', sans-serif;
+    background-color: #808080;
+    opacity: .75;
 }
 .incorrectGuess{
     height: 150px;
@@ -41,6 +46,8 @@ header{
     text-align: center;
     margin: 50px auto;
     z-index: 1;
-
+    font-family: 'Orbitron', sans-serif;
+    background-color: #808080;
+    opacity: .75;
 }
 /* Main Page END */
