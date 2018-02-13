@@ -29,7 +29,6 @@ console.log(choosenWord);
     }
     return underScore;
 }
-
 // Aquires users guess
 document.addEventListener('keypress', (event) => {
     let keyword = String.fromCharCode(event.keyCode);

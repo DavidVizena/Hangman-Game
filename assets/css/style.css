@@ -18,6 +18,7 @@ header{
     z-index: 1;
     background-image: url(../images/gundamHeader.jpg);
     float: none;
+    margin-bottom: -50px;
 }
 .underscore{
     height: 150px;
@@ -72,7 +73,7 @@ header{
     background-color: #808080;
     opacity: .75;
     float: left;
-    margin-left: 188px;
+    margin-left: 165px;
     margin-top: -25px;
     margin-bottom: -25px;
 }
@@ -88,7 +89,7 @@ header{
     background-color: #808080;
     opacity: .75;
     float: right;
-    margin-right: 188px;
+    margin-right: 165px;
     margin-top: -25px;
     margin-bottom: -25px;
 }
@@ -104,7 +105,7 @@ header{
     background-color: #808080;
     opacity: .75;
     float: left;
-    margin-left: 200px;
+    margin-left: 170px;
     margin-top: -25px;
     margin-bottom: -25px;
 }
