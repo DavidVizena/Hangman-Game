@@ -1,7 +1,7 @@
 //Global Variables
 // =========================================================
 // words array
-const words = ['hero', 'quatre', 'duo', 'wufei', 'trowa'];
+const words = ['heero', 'quatre', 'duo', 'wufei', 'trowa'];
 // Choose word randomly
 var randNum = Math.floor(Math.random() * words.length);
 var choosenWord = words[randNum];
@@ -25,24 +25,27 @@ var docSubtractLife = document.getElementsByClassName('lives');
 console.log(choosenWord);
 // Creates underscores based on word length
 generateUnderscore = () => {
-    for (let i = 0; i < choosenWord.length; i++){
-        underScore.push('_');
-    }
-    return underScore;
-}
+   for (let i = 0; i < choosenWord.length; i++){
+       underScore.push('_');
+   }
 // prints the number of underscores to the page
-docUnderScore[0].innerHTML = generateUnderscore().join(' ');
+docUnderScore[0].innerHTML = underScore.join(' ');
+}
+generateUnderscore();
 // function to reset the lives/guess boxes
 function reset(){
-    remainingLives = 5;
-    docSubtractLife[0].innerHTML = "Lives Left: 5";
-    docCorrectGuess[0].innerHTML = "Correct Guess: ";
-    docincorrectGuess[0].innerHTML = "Incorrect Guess: ";
-    generateUnderscore();
-    docUnderScore[0].innerHTML = generateUnderscore().join(' ');
+   remainingLives = 5;
+   underScore.length = 0;
+   randNum = Math.floor(Math.random() * words.length);
+   choosenWord = words[randNum];
+   console.log(choosenWord);
+   docSubtractLife[0].innerHTML = "Lives Left: 5";
+   docCorrectGuess[0].innerHTML = "Correct Guess: ";
+   docincorrectGuess[0].innerHTML = "Incorrect Guess: ";
+   generateUnderscore(); 
 }
 // Aquires users guess
-    document.addEventListener('keypress', (event) => {
+document.addEventListener('keypress', (event) => {
     let keyword = String.fromCharCode(event.keyCode);
 // If users guess is correct
     if(choosenWord.indexOf(keyword) > -1) {
@@ -74,10 +77,10 @@ function reset(){
   }
 //   else if to add a win if you guess the word
   else if(correctWord.join('') === choosenWord){
-    // resets the lives and guesses
+      // adds a win to the win box
+      win++;
+      // resets the lives and guesses
     reset();
-    // adds a win to the win box
-    win++;
     // makes a new word to guess
     docwinCondition[0].innerHTML = "Wins: " + win;
 
