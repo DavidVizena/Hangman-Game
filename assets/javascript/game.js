@@ -38,11 +38,8 @@ function reset(){
     docSubtractLife[0].innerHTML = "Lives Left: 5";
     docCorrectGuess[0].innerHTML = "Correct Guess: ";
     docincorrectGuess[0].innerHTML = "Incorrect Guess: ";
-    docNewUnderScore.innerHTML = generateUnderscore().join(' ');
     generateUnderscore();
     docUnderScore[0].innerHTML = generateUnderscore().join(' ');
-    var randNum = Math.floor(Math.random() * words.length);
-    var choosenWord = words[randNum];
 }
 // Aquires users guess
     document.addEventListener('keypress', (event) => {
