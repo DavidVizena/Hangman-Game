@@ -11,8 +11,8 @@ var correctWord = [];
 var incorrectWord =[];
 var underScore = [];
 var remainingLives = 5;
-var winSound = new Audio('../sounds/gundamWin.mp3');
-var loseSound = new Audio('../sounds/gundamLose.mp3');
+var winSound = new Audio('./assets/sounds/gundamWin.mp3');
+var loseSound = new Audio('./assets/sounds/gundamLose.mp3');
 
 // Dom manipulation
 var docUnderScore = document.getElementsByClassName('underscore');
@@ -22,11 +22,14 @@ var docincorrectGuess = document.getElementsByClassName('incorrectGuess');
 var docwinCondition = document.getElementsByClassName('wins');
 var docLossCondition = document.getElementsByClassName('losses');
 var docSubtractLife = document.getElementsByClassName('lives');
+var docWinSound = document.getElementById('winSound');
+var docloseSound = document.getElementById('loseSound');
+
 //Main
 // =========================================================
 console.log(choosenWord);
 // Creates underscores based on word length
-generateUnderscore = () => {
+function generateUnderscore(){
     for (let i = 0; i < choosenWord.length; i++){
         underScore.push('_');
     }
@@ -37,6 +40,7 @@ generateUnderscore();
 // function to reset the lives/guess boxes
 function reset(){
     remainingLives = 5;
+    correctWord = [];
     underScore.length = 0;
     randNum = Math.floor(Math.random() * words.length);
     choosenWord = words[randNum];
