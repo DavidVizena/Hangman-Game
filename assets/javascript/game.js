@@ -54,6 +54,13 @@ function reset(){
 document.addEventListener('keypress', (event) => {
     let keyword = String.fromCharCode(event.keyCode);
     // If users guess is correct
+for (var i = 0; i <choosenWord.length; i++) {
+    if (choosenWord[i] === keyword){
+        console.log(keyword);
+        underScore[i] = keyword;
+        console.log(underScore);
+    }
+}
     if(choosenWord.indexOf(keyword) > -1) {
         // adds to correctWord array
         correctWord.push(keyword);
@@ -84,7 +91,7 @@ document.addEventListener('keypress', (event) => {
         docLossCondition[0].innerHTML = "Losses: " + loss;
     }
     //   else if to add a win if you guess the word
-    else if(correctWord.join('') === choosenWord){
+    else if(underScore.join('') === choosenWord){
         // adds a win to the win box
         win++;
         // plays the win audio file
