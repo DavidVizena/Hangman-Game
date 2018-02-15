@@ -83,7 +83,11 @@ for (var i = 0; i <choosenWord.length; i++) {
     if(remainingLives === 0){
         // adds a loss to the loss box  
         loss++;
-        // plays the lose audiofile
+        // plays the lose audiofile and show pic
+        setTimeout(function(){document.getElementById("picNoo").setAttribute("style", "display: block;");}, 1000);
+        // fadeout the image
+        window.setTimeout("document.getElementById('picNoo').style.display='none';", 5500); 
+          
         loseSound.play();
         // resets the lives and guesses after a loss
         reset();
@@ -94,7 +98,11 @@ for (var i = 0; i <choosenWord.length; i++) {
     else if(underScore.join('') === choosenWord){
         // adds a win to the win box
         win++;
-        // plays the win audio file
+        // plays the win audio file and shows pic
+        document.getElementById('picHeero').setAttribute("style", "display: block;");
+        // fadeout img
+        window.setTimeout("document.getElementById('picHeero').style.display='none';", 12000); 
+
         winSound.play();
       // resets the lives and guesses
     reset();
