@@ -1,7 +1,7 @@
 //Global Variables
 // =========================================================
 // words array
-const words = ['heero', 'quatre', 'duo', 'wufei', 'trowa'];
+const words = ['heero', 'quatre', 'duo', 'wufei', 'trowa', "zechs", "deathscythe", "wingzero", "sandrock", "shenlong", "heavyarms", "epyon", "tallgeese"];
 // Choose word randomly
 var randNum = Math.floor(Math.random() * words.length);
 var choosenWord = words[randNum];
