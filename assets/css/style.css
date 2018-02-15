@@ -73,7 +73,7 @@ header{
     background-color: #808080;
     opacity: .75;
     float: left;
-    margin-left: 165px;
+    margin-left: 188px;
     margin-top: -25px;
     margin-bottom: -25px;
 }
@@ -89,7 +89,7 @@ header{
     background-color: #808080;
     opacity: .75;
     float: right;
-    margin-right: 165px;
+    margin-right: 188px;
     margin-top: -25px;
     margin-bottom: -25px;
 }
@@ -110,9 +110,18 @@ header{
     margin-bottom: -25px;
 }
 
-.picHeero{
-
+#picHeero{
+    z-index: 3;
+    position: fixed;
+    top: 339px;
+    left: 790px;
+    display: none;
 }
-.picNoo{
+#picNoo{
+    z-index: 3;
+    position: fixed;
+    top: 300px;
+    left: 735px;
+    display: none;
 }
 /* Main Page END */
