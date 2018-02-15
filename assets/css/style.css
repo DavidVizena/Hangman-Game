@@ -105,7 +105,7 @@ header{
     background-color: #808080;
     opacity: .75;
     float: left;
-    margin-left: 170px;
+    margin-left: 150px;
     margin-top: -25px;
     margin-bottom: -25px;
 }
@@ -114,14 +114,14 @@ header{
     z-index: 3;
     position: fixed;
     top: 339px;
-    left: 790px;
+    left: 720px;
     display: none;
 }
 #picNoo{
     z-index: 3;
     position: fixed;
     top: 300px;
-    left: 735px;
+    left: 670px;
     display: none;
 }
 /* Main Page END */
