@@ -106,7 +106,6 @@ for (var i = 0; i <choosenWord.length; i++) {
         winSound.play();
       // resets the lives and guesses
     reset();
-    // makes a new word to guess
     docwinCondition[0].innerHTML = "Wins: " + win;
 
 }
